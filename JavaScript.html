@@ -1,0 +1,144 @@
+---
+layout: masterPage
+href: 2012-02-30-JavaScript.html
+desc: JavaScript
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">
+Javascript as a language is something which initially i always thought will be a difficult language to understand and to work upon.After trying my hands on it , i feel more comfortable working and when i saw the magic happening to the elements to which the Javascript was applied to i was surprised that how can just a single change in the code can make so much of a difference.<br />
+According to me to start with javascript one should not start reading the relevant material available immediately.<br />
+Once the basics are clear , we should have a look to the examples that are already available on internet, copy&nbsp; them to a text file , save it , run it and then make some changes and again run it. You will be able to see what affect that change made on the page and for me it really helped me as i was able to think better about those changes and visualize them beforehand.<br />
+<a href="http://4.bp.blogspot.com/-WYXxEZX2yEo/T1dvZU8uKCI/AAAAAAAAAF0/RZ4slRm_W_o/s1600/logo_dom.png.gif" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"></a><br />
+I think every one should know what a <b>DOM</b> is and how it is related to JavaScript.In a nutshell i would say that DOM is an Application Programming Interface for valid HTML and XML documents.It defines the logical structure of documents and the way document is accessed and modified.<br />
+<br />
+With DOM we can :<br />
+<ul style="text-align: left;">
+<li>&nbsp; Build documents</li>
+<li>&nbsp; Navigate their structure</li>
+<li>&nbsp; Add, Modify or Delete the content.</li>
+<li>&nbsp; Change the appearance of the elements.</li>
+<li>&nbsp; Invoke behaviors based on events. </li>
+</ul>
+<br />
+We also have something called a Java Script Library which is nothing but a pre written Javascript which allows for easier development of Javascript based web applications.We have a number of JavaScript libraries available with us, here are the majorly used ones:&nbsp; <br />
+<br /><ul style="font-family: inherit; text-align: left;">
+<li><span style="font-size: small;">jQuery</span></li>
+<li><span style="font-size: small;">Prototype</span></li>
+<li><span style="font-size: small;">script.aculo.us </span></li>
+<li><span style="font-size: small;">MooTools</span></li>
+<li><span style="font-size: small;">ExtJS</span></li>
+<li><span style="font-size: small;">Qooxdoo</span></li>
+<li><span style="font-size: small;">Yahoo! UI Library (YUI)</span></li>
+<li><span style="font-size: small;">MochiKit </span></li>
+<li><span style="font-size: small;">Midori</span></li>
+<li><span style="font-size: small;">The Dojo Toolkit</span></li>
+</ul>
+Here are the statistics and Market share for Javascript Libraries till March 2012:<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-R-42PQJsYZ8/T1dAxkCrGmI/AAAAAAAAAFs/y6cjVQe4WDY/s1600/stats.jpeg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="293" src="http://2.bp.blogspot.com/-R-42PQJsYZ8/T1dAxkCrGmI/AAAAAAAAAFs/y6cjVQe4WDY/s320/stats.jpeg" width="320" />&nbsp;</a></div>
+<div class="separator" style="clear: both; text-align: center;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+There is one more thing that i came across while reading about JavaScript.Javascript is a loosely typed language. That does not mean
+that it has no data types,its just that the value of a variable or a Javascript
+object property does not need to have a particular type of value assigned
+to it.We have&nbsp;<i> Type Coercion</i></div>
+<div class="separator" style="clear: both; text-align: left;">
+in JavaScript which is possible with == operator in which the comparison can be carried out even if the values which are being compared are not of same type.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+Ex:<br />&nbsp;<span style="background-color: #eeeeee;">123="123" will give a Boolean value as TRUE. Similarly</span></div>
+<div class="separator" style="background-color: #eeeeee; clear: both; text-align: left;">
+&nbsp; true==1</div>
+<div class="separator" style="background-color: #eeeeee; clear: both; text-align: left;">
+&nbsp; false=="0"</div>
+<div class="separator" style="background-color: #eeeeee; clear: both; text-align: left;">
+&nbsp; []==""</div>
+<div class="separator" style="clear: both; text-align: left;">
+will give us Boolean value as True&nbsp;</div>
+<div class="separator" style="clear: both; text-align: left;">
+.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<span style="font-size: x-small;"><i>*To try these examples we have console in various developer tools in Chrome and Firefox where in we can see what value it returns. </i></span></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+I came across a very nice explanation for Coercion and would like to share with you all,</div>
+<h4 style="background-color: #eeeeee;">
+The comparison x == y, where x and y are values, produces true or false. Such a comparison is performed as<br />follows:</h4>
+<ol style="background-color: #eeeeee;"><br />
+<li>If Type(<strong>x</strong>) <strong>is the same as</strong> Type(<strong>y</strong>), then<ol><br />
+<li>If Type(x) is Undefined, return true: <em>undefined == undefined</em></li>
+<br />
+<li>If Type(x) is Null, return true: <em>null == null</em></li>
+<br />
+<li>If Type(x) is Number, then<ol><br />
+<li>If x is NaN, return false: <em>NaN != NaN</em></li>
+<br />
+<li>If y is NaN, return false: <em>NaN != NaN</em></li>
+<br />
+<li>If x is the same Number value as y, return true: <em>2 == 2</em></li>
+<br />
+<li>If x is +0 and y is −0, return true: <em>0 == 0</em></li>
+<br />
+<li>If x is −0 and y is +0, return true: <em>0 == 0</em></li>
+<br />
+<li>Return false: <em>2 != 1</em></li>
+</ol>
+</li>
+<br />
+<li>If Type(x) is <strong>String</strong>, then return true if x and y are <strong>exactly the same sequence of characters</strong> (same length and same characters in corresponding positions). Otherwise, return false: <em>"a" == "a" but "a" != "b" and "a" != "aa"</em></li>
+<br />
+<li>If Type(x) is Boolean, return true if x and y are both true or both false. Otherwise, return false: <em>true == true and false == false but true != false and false != true</em></li>
+<br />
+<li>Return true if x and y refer to the same object. Otherwise, return false: <em>var o = {}; o == o but o != {} and {} != {} and [] != [] ... etc etc, all objects are eqeq only if it's the same</em></li>
+</ol>
+</li>
+<li>If <strong>x is null and y is undefined</strong>, return <strong>true</strong>: <em>null == undefined</em></li>
+<br />
+<li>If x is undefined and y is null, return true: <em>undefined == null</em></li>
+<br />
+<li>If Type(x) is Number and Type(y) is String, return the result of the comparison x == ToNumber(y): <em>2 == "2"</em></li>
+<br />
+<li>If Type(x) is String and Type(y) is Number, return the result of the comparison ToNumber(x) == y: <em>"2" == 2</em></li>
+<br />
+<li>If Type(x) is Boolean, return the result of the comparison ToNumber(x) == y: <em>false == 0 and true == 1 but <strong>true != 2</strong></em></li>
+<br />
+<li>If Type(y) is Boolean, return the result of the comparison x == ToNumber(y)</li>
+<br />
+<li>If Type(x) is either String or Number and Type(y) is Object, return the result of the comparison x == ToPrimitive(y): <em>ToPrimitive means implicit valueOf call or toString if toString is defined and valueOf is not</em></li>
+</ol>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+&nbsp;</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br />I am still reading about JavaScript and will post new things if i come across any.</div>
+<div class="separator" style="clear: both; text-align: left;">
+Happy&nbsp; Learning.</div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+<div class="separator" style="clear: both; text-align: left;">
+<br /></div>
+References:<br />
+<a href="http://webreflection.blogspot.in/2010/10/javascript-coercion-demystified.html">http://webreflection.blogspot.in/2010/10/javascript-coercion-demystified.html</a><br />
+<a href="http://www.google.com/">http://www.google.com</a> <br />
+<br /></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+   
+    var disqus_shortname = 'myfreshideas'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' +disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>

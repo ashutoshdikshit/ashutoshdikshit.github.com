@@ -1,0 +1,85 @@
+---
+layout: masterPage
+---
+<link rel="stylesheet" href="css/global.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'img/loading.gif',
+				play: 5000,
+				pause: 2500,
+				hoverPause: true,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationStart on slide: ', current);
+					};
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+					if (window.console && console.log) {
+						// example return of current slide number
+						console.log('animationComplete on slide: ', current);
+					};
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+
+<body>
+	
+	<div id="containerSlide">
+		<div id="example">			
+			<div id="slides">
+				<div class="slides_container">
+					<div class="slide">
+						<img src="img/At Night.jpg" width="570" height="270" alt="Slide 8"></a>
+						<div class="caption">
+							<p>New York at Night</p>
+						</div>
+					</div>
+					
+					<div class="slide">
+						<img src="img/Brooklyn Bridge.jpg" width="570" height="270" alt="Slide 8"></a>
+						<div class="caption">
+							<p>Brooklyn bridge</p>
+						</div>
+					</div>
+					
+					<div class="slide">
+						<img src="img/Wet New york.jpg" width="570" height="270" alt="Slide 8"></a>
+						<div class="caption">
+							<p>A Wet New York night</p>
+						</div>
+					</div>
+					
+					<div class="slide">
+						<img src="img/Manhattan.jpg" width="570" height="270" alt="Slide 8"></a>
+						<div class="caption">
+							<p>Marvelous Manhattan</p>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="prev"><img src="img/arrow-prev.png" width="24" height="43" alt="Arrow Prev"></a>
+				<a href="#" class="next"><img src="img/arrow-next.png" width="24" height="43" alt="Arrow Next"></a>
+			</div>	
+				
+		</div>
+		<h3>Pictures from National Geographic Photo Gallery</h3>	
+		
+	</div>
+
