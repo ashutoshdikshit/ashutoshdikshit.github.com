@@ -68,17 +68,18 @@
    <!--end menu-->
    <!--end header--></br></br></br>
    <div id="google" style="width:400px;float:right" >
-	<div id="cse" style="width: 100%;margin-top:10px">Loading</div>
+	<div id="cse" style="width: 100%;">Loading</div>
 		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 		<script type="text/javascript"> 
-			google.load('search', '1', {language : 'en', style : google.loader.themes.SHINY});
-			google.setOnLoadCallback(function() {
-				var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
-				'017347998125321006954:yqx0c0mxwq8', customSearchOptions);
-				customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-				customSearchControl.draw('cse');
-				}, true);
-		</script>
+		google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
+		google.setOnLoadCallback(function() {
+		var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+		'017347998125321006954:yqx0c0mxwq8', customSearchOptions);
+		customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+		customSearchControl.draw('cse');
+		}, true);
+</script>
+
 
 	</div> 
      
