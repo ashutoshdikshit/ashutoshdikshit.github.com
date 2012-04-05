@@ -37,12 +37,12 @@
    <header>
 
    <!--start logo-->
-   <a href="#" id="logo"><img src="images/logo.png" width="221" height="84" alt="logo"/></a>    
+   <a href="Home.html" id="logo"><img src="images/logo.png" width="221" height="84" alt="logo"/></a>    
    <!--end logo-->
 
    <!--start menu-->
    
-	<ul id="nav" style="margin: 20px 0 0 80px;">
+	<ul id="nav" style="margin: 20px 0 0 80px;float:right">
 	<li class="current">
 	<li><a class="current" href="Home.html">Home</a>
 	<li><a href="AboutMe.html">About Me</a>
@@ -66,8 +66,25 @@
 	<li><a href="Contact.html">Contact</a>
 	</ul>
    <!--end menu-->
-   <!--end header-->
+   <!--end header--></br></br></br>
+   <div id="google" style="width:400px;float:right" >
+	<div id="cse" style="width: 100%;margin-top:10px">Loading</div>
+		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+		<script type="text/javascript"> 
+			google.load('search', '1', {language : 'en', style : google.loader.themes.SHINY});
+			google.setOnLoadCallback(function() {
+				var customSearchOptions = {};  var customSearchControl = new google.search.CustomSearchControl(
+				'017347998125321006954:yqx0c0mxwq8', customSearchOptions);
+				customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+				customSearchControl.draw('cse');
+				}, true);
+		</script>
+
+	</div> 
+     
    </header>
+    
+   
   <div id="intro">
 	  {{content}}
    </div>
