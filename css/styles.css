@@ -56,6 +56,7 @@ p {
 	
 a, p a {
 	text-decoration:none;
+	color:black;
 	}
 	
 a:hover {
@@ -97,7 +98,7 @@ h2{
 
 	
 h3{
-	font-size: 28px;
+	font-size: 23px;
 	line-height:1.6;
 	color:black;
 	text-transform:none;
